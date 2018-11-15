@@ -44,7 +44,6 @@ public class SwingView extends JFrame implements View {
                 JOptionPane.PLAIN_MESSAGE);
     }
 
-
     @Override
     public void showHelp() {
         showMessageDialog(Constants.HELP_MESSAGE, Constants.HELP_BUTTON_TITLE);

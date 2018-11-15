@@ -10,8 +10,8 @@ import com.pvlpech.view.tui.ConsoleView;
 public class Main {
 
     public static void main(String[] args) {
-//        View view = new ConsoleView();
-        View view = new SwingView();
+        View view = new ConsoleView();
+//        View view = new SwingView();
         Loader loader = new FileLoader();
         Controller controller = new Controller(view, loader);
 
