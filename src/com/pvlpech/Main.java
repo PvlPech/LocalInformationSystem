@@ -15,9 +15,6 @@ public class Main {
         Loader loader = new FileLoader();
         Controller controller = new Controller(view, loader);
 
-        view.addPropertyChangeListener(controller);
-        loader.addPropertyChangeListener(view);
-
         view.init();
     }
 }

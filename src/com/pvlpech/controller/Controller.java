@@ -18,6 +18,9 @@ public class Controller implements PropertyChangeListener {
     public Controller(View view, Loader loader) {
         this.view = view;
         this.loader = loader;
+
+        this.view.addPropertyChangeListener(this);
+        this.loader.addPropertyChangeListener(this.view);
     }
 
     @Override
